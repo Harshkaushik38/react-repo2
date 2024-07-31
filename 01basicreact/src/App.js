@@ -1,7 +1,7 @@
 
 function App() {
   return (
- <h1>react with harry</h1>
+ <h1>react with harsh kaushik </h1>
     
   );
 }
