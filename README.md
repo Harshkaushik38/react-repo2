@@ -1,2 +1,2 @@
-# react-repo2
+# React
 this is my second repository
