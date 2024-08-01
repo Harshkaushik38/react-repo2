@@ -1,9 +1,13 @@
 
-function App() {
+import Chai from './Chai';
+
+function App () {
+
   return (
- <h1>react with harsh kaushik </h1>
-    
-  );
+     <Chai/>
+  )
+
 }
 
 export default App;
+
