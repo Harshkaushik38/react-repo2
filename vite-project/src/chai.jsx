@@ -1,9 +1,10 @@
 
-function Chai () {
+ function Chai () {
 
-return (
-    <h2>project is ready</h2>
-)
-}
+    return(
+        <h1> project with react</h1>
+    )
+ }
 
-export default Chai
+ export default Chai;
+ 

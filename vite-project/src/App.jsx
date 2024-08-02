@@ -1,12 +1,11 @@
 
+ import Chai from './chai'
 
-import Chai from "./chai"
+ function App() {
 
-function App() {
+    return(
+        <Chai/>
+    )
+ }
 
-  return (
-     <Chai/>
-  )
-}
-
-export default App
+ export default App;
