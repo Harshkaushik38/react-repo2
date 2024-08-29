@@ -3,39 +3,47 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
 
-  let [counter,setcounter] =useState(15);
+  function App(){
 
-  // let counter =15;
+    let [counter,setCounter] = useState(5)
 
-  const addvalue = () => {
-    console.log("value added", counter);
-    counter = counter + 1;
-  setcounter(counter);
- if (addvalue>15 && addvalue<1) {
-  console.log("do not print");
- }
-  }
+    // let counter = 5;
 
-  const removevalue =() => {
-    setcounter(counter -1);
-  }
+    const addvalue = () => {
+       counter = counter +1
+       setCounter(counter)
+       console.log("add value",counter)
 
-  return (
-    
-    <>
-      <h1>React with harsh</h1>
-      <h1>Counter value {counter}</h1>
+       if (counter ===20){
 
-      <button onClick={addvalue}>Add value {counter}</button>
-      
-      <br />
-      <button onClick={removevalue}
-      >Remove value {counter}</button>
-        
-    </>
-  )
+       }
+
+    }
+
+   const removevalue = () => {
+    counter = counter - 1
+    setCounter(counter)
+    console.log("remove value",counter)
+
+    if(counter === 0 ) {
+       
+    }
 }
+
+    return (
+        <>
+        <h1> react in counter</h1>
+        <h2> counter value : {counter}</h2>
+        <button   
+         onClick={addvalue}>Add value {counter}</button>
+        <br />
+        <button
+        onClick={removevalue}>Remove value {counter}</button>
+        <br />
+        <footer>footer: {counter}</footer>
+        </>
+    )
+  }
 
 export default App
