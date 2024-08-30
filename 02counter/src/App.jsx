@@ -11,13 +11,12 @@ import './App.css'
     // let counter = 5;
 
     const addvalue = () => {
-       counter = counter +1
-       setCounter(counter)
-       console.log("add value",counter)
-
-       if (counter ===20){
-
-       }
+      
+      setCounter( prevcounter => prevcounter +1)
+      setCounter(prevcounter  =>  prevcounter +1);
+      setCounter( prevcounter => prevcounter +1);
+      setCounter( prevcounter=> prevcounter +1);
+       
 
     }
 
@@ -26,9 +25,7 @@ import './App.css'
     setCounter(counter)
     console.log("remove value",counter)
 
-    if(counter === 0 ) {
-       
-    }
+   
 }
 
     return (
